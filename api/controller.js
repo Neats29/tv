@@ -17,8 +17,12 @@ var controller = {
 						payload = JSON.parse(payload.toString()); //have to turn to string, otherwise payload only returns the buffer
 	//					console.log("PAYLOAD:", payload.atoz_programmes.elements);
 						shows = payload.atoz_programmes.elements;
-						
-						return body;
+//                        console.log(shows);
+                        for (var i=0; i< shows.length; i++){
+                            console.log(shows[i].title);
+//                            return shows[i].title;
+                        }
+						return shows;
 					}
 				});
 			});
