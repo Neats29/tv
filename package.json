@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/Neats29/tv#readme",
   "dependencies": {
+    "chai": "^3.4.1",
     "hapi": "^11.1.1",
     "inert": "^3.2.0",
     "jade": "^1.11.0",
+    "lab": "^7.3.0",
     "vision": "^4.0.1",
     "wreck": "^7.0.0"
   }
