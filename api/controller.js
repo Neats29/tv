@@ -11,17 +11,19 @@ var controller = {
 				if (err) { throw err; }
 
 				wreck.read(res, null, function (err, body) {
-					if (err) console.log(err);
-					else {
+					if (err) { 
+						console.log(err); 
+					} else {
 						payload = JSON.parse(payload.toString()); //have to turn to string, otherwise payload only returns the buffer
 	//					console.log("PAYLOAD:", payload.atoz_programmes.elements);
 						shows = payload.atoz_programmes.elements;
+						
 						return body;
 					}
 				});
 			});
 			
-			return reply.view('index', { shows: shows });
+			return reply.view('index', { shows : shows });
 		}
 	}
 };
